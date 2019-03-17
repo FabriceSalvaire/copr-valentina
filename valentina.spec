@@ -70,6 +70,7 @@ traditional methods to create a unique pattern making tool.
 rm -rf %{name}-%{version}
 tar -xjf %{SOURCE0}
 mv dismine-valentina-* %{name}-%{version}
+%setup -D -T -n %{name}-%{version}
 
 ####################################################################################################
 
