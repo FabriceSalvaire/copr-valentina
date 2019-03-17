@@ -1,4 +1,5 @@
 # https://software.opensuse.org/download.html?project=home%3Adismine&package=valentina
+# https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/RPM_Guide/index.html
 # https://rpm.org/documentation.html
 
 ####################################################################################################
