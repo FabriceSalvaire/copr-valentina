@@ -1,4 +1,5 @@
 # https://software.opensuse.org/download.html?project=home%3Adismine&package=valentina
+# https://rpm.org/documentation.html
 
 ####################################################################################################
 
@@ -11,7 +12,7 @@ Group:         Graphics
 URL:           https://bitbucket.org/dismine/valentina
 # Packager:      Roman Telezhinskyi <dismine@gmail.com>
 Source0:       https://bitbucket.org/dismine/valentina/get/v%{version}.tar.bz2
-# %{name}-%{version}.tar.xz
+# % {name}-% {version}.tar.xz
 
 BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 
@@ -64,7 +65,10 @@ traditional methods to create a unique pattern making tool.
 ####################################################################################################
 
 %prep
-%setup -q -n %{name}-%{version}
+# %setup -q -n %{name}-%{version}
+rm -rf %{name}-%{version}
+tar -xjf %{SOURCE0}
+mv dismine-valentina-* %{name}-%{version}
 
 ####################################################################################################
 
